@@ -1,0 +1,109 @@
+.products {
+  padding-top: 121px;
+  padding-bottom: 98px;
+
+  &__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.17;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--brend-color-3);
+    margin-bottom: 15px;
+  }
+  &__title {
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--brend-color-1);
+    margin-bottom: 144px;
+  }
+  &__list {
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 130px;
+  }
+}
+.products-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 40px 41px 40px;
+  border-radius: 24px;
+
+  &__title {
+    position: relative;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--brend-color-2);
+    margin-top: 22px;
+  }
+  &__title::before {
+    content: '...';
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    color: var(--brend-color-2);
+    transform: translate(-180%);
+  }
+  &__text {
+    font-family: DM Sans;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.52;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: var(--brend-color-2);
+    margin-top: 30px;
+  }
+}
+.products-card--pink {
+  background: var(--bg-color);
+}
+.products-card--pink::before {
+  content: url(./src/images/pinkice-mob-x1.png);
+  margin-left: 5.5%;
+  margin-top: -40%;
+}
+.products-card--beige {
+  background: #f0d1a5;
+}
+.products-card--beige::before {
+  content: url(./src/images/icecoffe-mob-x1.png);
+  margin-left: 5.5%;
+  margin-top: -40%;
+}
+.products-card--green {
+  background: #c2e297;
+}
+.products-card--green::before {
+  content: url(./src/images/milkshake-mob-x1.png);
+  margin-left: 5.5%;
+  margin-top: -40%;
+}
+.products__button {
+  width: 40px;
+  height: 40px;
+  border: 0;
+  border-radius: 50%;
+  background-image: url(./src/images/arrow-right-x2.jpg);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+  margin-top: 30px;
+}
