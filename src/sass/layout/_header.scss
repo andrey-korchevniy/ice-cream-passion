@@ -1,0 +1,14 @@
+.header {
+  display: flex;
+  @media screen and (min-width: $mob) {
+  }
+  &__nav {
+    display: none;
+  }
+  &__menu {
+    margin-left: auto;
+  }
+}
+.button--header {
+  display: none;
+}
