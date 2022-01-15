@@ -37,3 +37,20 @@ body {
     width: 1280px;
   }
 }
+.button {
+  border: 1px transparent;
+  border-top: 50%;
+  border-radius: 99em;
+  padding: 8px 15px;
+  font-family: DM Sans;
+  font-size: 8px;
+  line-height: 10px;
+}
+.button--1 {
+  background-color: var(--brend-color-1);
+  color: var(--brend-color-2);
+}
+.button--2 {
+  background-color: var(--brend-color-2);
+  color: var(--brend-color-1);
+}
