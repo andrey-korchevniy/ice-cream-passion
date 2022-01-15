@@ -13,7 +13,7 @@
     line-height: 1.17;
     text-transform: uppercase;
 
-    color: #ffa5ba;
+    color: var(--brend-color-3);
   }
 
   &__title {
@@ -28,7 +28,7 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
 
-    color: #d41443;
+    color: var(--brend-color-1);
   }
 
   &__sm-list {
@@ -53,7 +53,7 @@
 
   &__item:hover &__svg,
   &__item:focus &__svg {
-    --color1: #d41443;
+    --color1: var(--brend-color-1);
   }
 
   &__contact {
@@ -67,12 +67,12 @@
 
     text-align: right;
 
-    color: #000000;
+    color: var(--caption-color);
   }
 
   &__phone {
     text-decoration: none;
-    color: #d41443;
+    color: var(--caption-color);
   }
 
   &__line {
@@ -97,6 +97,6 @@
 
     text-align: center;
 
-    color: #907e82;
+    color: var(--text-color);
   }
 }
