@@ -3,6 +3,9 @@
 }
 
 .advantages-list {
+    @media screen and (min-width: 768px){
+        display: flex;
+    }
     &__title {
     font-family: "Titan One";
     font-size: 36px;
@@ -12,18 +15,47 @@
     color: var(--brend-color-1);
     margin-top: 16px;
     margin-bottom: 13px;
+    @media screen and (min-width: 768px){
+        margin-top: 36px;
+        font-size: 48px;
+        line-height: 1.146;
+    }
+    @media screen and (min-width: 1280px){
+        margin-top: 40px;
+        font-size: 58px;
+    }
 }
     &__descr {
         width: 230px;
         font-weight: bold;
         line-height: 1.7;
+        @media screen and (min-width: 768px){
+            width: 180px;
+            font-size: 14px;
+            line-height: 1.74;
+        }
+        @media screen and (min-width: 1280px){
+            width: 330px;
+        }
     }
     &__item {
         position: relative;
         padding-top: 50px;
     }
-    &__item:not(:last-child) {
-        margin-bottom: 38px;
+    @media screen and (max-width: 767px){
+        &__item:not(:last-child) {
+            margin-bottom: 38px;
+        }
+    }
+    @media screen and (min-width: 768px){
+        &__item:not(:last-child) {
+            margin-right: 60px;
+        }
+    }
+    @media screen and (min-width: 1280px){
+        &__item:not(:last-child) {
+            margin-right: 30px;
+        }
     }
 }
 
