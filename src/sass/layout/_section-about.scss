@@ -2,7 +2,7 @@
   padding: 125px 0 40px 0;
   background-color: #fff5f6;
   &__container {
-    background-image: url(/images/milkbreeze-mob-x1.png);
+    background-image: url(../images/milkbreeze-mob-x1.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position-y: 90%;
@@ -33,13 +33,14 @@
   &__image {
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 46px;
   }
   &__description {
     font-family: DM Sans;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
-    line-height: 1.58;
+    line-height: 1.62;
     letter-spacing: 0.04em;
     color: var(--caption-color);
     max-width: 220px;
