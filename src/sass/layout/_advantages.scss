@@ -1,0 +1,25 @@
+.advantages {
+    background: #FFF5F6;
+}
+
+.advantages-list {
+    &__title {
+    font-family: "Titan One";
+    font-size: 36px;
+    line-height: 1.139;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--brend-color-1);
+    margin-top: 16px;
+    margin-bottom: 13px;
+}
+    &__descr {
+        width: 230px;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 1.7;
+    }
+    &__item:not(:last-child) {
+        margin-bottom: 38px;
+    }
+}
