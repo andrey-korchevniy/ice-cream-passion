@@ -55,7 +55,7 @@
       <path fill="none" stroke="#d41443" stroke-width="6.4" stroke-miterlimit="4" stroke-linecap="round"
         stroke-linejoin="round" style="stroke: var(--color1, #d41443)" d="M3.2 3.2l14.169 12.8-14.169 12.8"></path>
     </symbol>
-        <symbol id="icon-btnsvg1" viewBox="0 0 22 32">
+    <symbol id="icon-btnsvg1" viewBox="0 0 22 32">
       <path fill="none" stroke="#FFFFFF" stroke-width="6.4" stroke-miterlimit="4" stroke-linecap="round"
         stroke-linejoin="round" style="stroke: var(--color1, #FFFFFF)" d="M3.2 3.2l14.169 12.8-14.169 12.8"></path>
     </symbol>
@@ -138,6 +138,11 @@
         stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.2857" d="M0 16h45.714"></path>
       <path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="miter"
         stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.2857" d="M0 29.714h45.714"></path>
+    </symbol>
+    <symbol id="close" viewBox="0 0 32 32">
+      <path
+        d="M3.232 1.484l-1.441 1.387 26.965 28 1.441-1.387zM2.512 2.179l26.963 28zM29.208 2.039l-27.278 27.695 1.428 1.404 27.278-27.695zM2.283 30.069l28-26.963z">
+      </path>
     </symbol>
   </defs>
 </svg>

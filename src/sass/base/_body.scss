@@ -44,9 +44,11 @@ body {
   }
 }
 .button {
+  cursor: pointer;
   border-top: 50%;
   border-radius: 99em;
-  padding: 8px 15px;
+  // height: 24px;
+  padding: 7px 13px;
   font-family: DM Sans;
   font-size: 8px;
   line-height: 10px;

@@ -8,10 +8,10 @@
   // background-color: var(--bg-color);
   //
   background-image: url('../images/ice-mob-x1.png'),
-    radial-gradient(circle at 70% 50%, var(--bg-color-2) 173px, var(--bg-color) 0px);
+    radial-gradient(circle at 65% 50%, var(--bg-color-2) 170px, var(--bg-color) 0px);
 
   background-repeat: no-repeat;
-  background-position: 70% 100%;
+  background-position: 77% 100%;
   background-size: auto;
   @media screen and (min-width: $mob) {
     width: $mob;
