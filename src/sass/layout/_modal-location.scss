@@ -20,7 +20,7 @@
     @media screen and(min-width:768px) {
             width: 758px;}
 
-    @media screen and(min-width:1200px) {
+    @media screen and(min-width:1280px) {
                 width: 1190px;}
 
     &__map {
@@ -48,8 +48,6 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
-  align-items: center;
-  text-align: center;
 
   cursor: pointer;
     position: absolute;
@@ -78,8 +76,8 @@
         @media screen and(min-width:768px) {
             transform: translatex(768px);}
 
-        @media screen and(min-width:1200px) {
-            transform: translatex(1200px);}
+        @media screen and(min-width:1280px) {
+            transform: translatex(1280px);}
     }
 }
 
@@ -100,7 +98,7 @@
         width: 470px;}
     @media screen and(min-width:768px) {
             width: 758px;}
-    @media screen and(min-width:1200px) {
+    @media screen and(min-width:1280px) {
                 width: 1190px;}
     }
 
@@ -110,7 +108,7 @@
 
     @media screen and(min-width:768px) {
         width: 758px;}
-    @media screen and(min-width:1200px) {
+    @media screen and(min-width:1280px) {
             width: 1190px;}
     
 }
