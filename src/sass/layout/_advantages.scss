@@ -1,0 +1,110 @@
+.advantages {
+    background: #FFF5F6;
+}
+
+.advantages-list {
+    @media screen and (min-width: 768px){
+        display: flex;
+    }
+    &__title {
+    font-family: "Titan One";
+    font-size: 36px;
+    line-height: 1.139;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--brend-color-1);
+    margin-top: 16px;
+    margin-bottom: 13px;
+    @media screen and (min-width: 768px){
+        margin-top: 36px;
+        font-size: 48px;
+        line-height: 1.146;
+    }
+    @media screen and (min-width: 1280px){
+        margin-top: 40px;
+        font-size: 58px;
+    }
+}
+    &__descr {
+        width: 230px;
+        font-weight: bold;
+        line-height: 1.7;
+        @media screen and (min-width: 768px){
+            width: 180px;
+            font-size: 14px;
+            line-height: 1.74;
+        }
+        @media screen and (min-width: 1280px){
+            width: 330px;
+        }
+    }
+    &__item {
+        position: relative;
+        padding-top: 50px;
+    }
+    @media screen and (max-width: 767px){
+        &__item:not(:last-child) {
+            margin-bottom: 38px;
+        }
+    }
+    @media screen and (min-width: 768px){
+        &__item:not(:last-child) {
+            margin-right: 60px;
+        }
+    }
+    @media screen and (min-width: 1280px){
+        &__item:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+}
+
+.advantages-list__title.milk {
+    &::before {
+        content: "";
+        width: 33px;
+        height: 50px;
+        background-image: url(../images/minmilk-x1.png);
+        background-size: cover;
+        position: absolute;
+        left: 0;
+        top: 0;
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: url(../images/minmilk-x2.png);
+        }
+    }
+}
+
+.advantages-list__title.vitamin {
+    &::before {
+        content: "";
+        width: 50px;
+        height: 50px;
+        background-image: url(../images/vitamins-x1.png);
+        background-size: cover;
+        position: absolute;
+        left: 0;
+        top: 0;
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: url(../images/vitamins-x2.png); 
+        }
+    }
+}
+
+.advantages-list__title.candy {
+    &::before {
+        content: "";
+        width: 44px;
+        height: 50px;
+        background-image: url(../images/candy-x1.png);
+        background-size: cover;
+        position: absolute;
+        left: 0;
+        top: 0;
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+              background-image: url(../images/candy-x2.png);  
+          }
+    }
+}
+
+

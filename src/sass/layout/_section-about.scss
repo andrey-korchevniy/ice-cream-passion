@@ -1,0 +1,73 @@
+.about {
+  padding: 125px 0 40px 0;
+  background-color: #fff5f6;
+  &__container {
+    background-image: url(../images/milkbreeze-mob-x1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 93%;
+  }
+  &__label {
+    font-family: Titan One;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.16;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--brend-color-3);
+  }
+  &__title {
+    font-family: Titan One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--brend-color-1);
+    max-width: 200px;
+    margin: 14px auto 26px;
+  }
+  &__image {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 46px;
+  }
+  &__description {
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.62;
+    color: var(--caption-color);
+    max-width: 220px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__text {
+    @extend .about__description;
+    color: var(--text-color);
+    margin-top: 32px;
+    margin-bottom: 25px;
+  }
+}
+.about__btn {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.28;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  align-items: center;
+  text-align: center;
+  color: var(--brend-color-1);
+  border: none;
+  border-radius: 22px;
+  background-color: #ffffff;
+  width: 176px;
+  height: 44px;
+}
+.about__svg {
+  margin-left: 14px;
+}

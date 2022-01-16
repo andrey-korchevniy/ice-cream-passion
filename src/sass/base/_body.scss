@@ -1,9 +1,14 @@
 body {
-  // color: $primary-text-color;
-  // background-color: $page-bgc;
-  // font-family: $ff-primary;
-  // letter-spacing: $primary-letter-spacing;
-  // font-size: $primary-font-size;
+  font-family: $ff-primary;
+  font-size: 12px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+  }
 }
 
 .section {
