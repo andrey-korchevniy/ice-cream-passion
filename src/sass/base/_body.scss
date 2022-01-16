@@ -6,17 +6,17 @@ body {
     font-size: 14px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1200px) {
     font-size: 16px;
   }
 }
 
-.section {
+/* .section {
   // padding: 60px 0 60px 0;
   // @media screen and (min-width: 1200px) {
   //   padding: 94px 0 94px 0;
   // }
-}
+} */
 
 .container {
   width: 100%;
@@ -39,9 +39,8 @@ body {
     padding-right: 34px;
   }
 
-  @media screen and (min-width: 1280px) {
-    width: 1280px;
-  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;}
 }
 .button {
   border-top: 50%;
