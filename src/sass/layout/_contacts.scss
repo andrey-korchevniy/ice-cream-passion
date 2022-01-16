@@ -8,7 +8,7 @@
   padding-top: 86px;
 
   &__list {
-    width: 220px;
+    max-width: 480px;
     height: 427px;
     background: var(--brend-color-2);
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
@@ -120,6 +120,8 @@
 
   &__tel,
   &__mail {
+    display: flex;
+    flex-direction: column;
     font-size: 12px;
     line-height: 1.5;
     color: var(--text-color);
