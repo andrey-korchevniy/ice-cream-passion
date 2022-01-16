@@ -150,3 +150,34 @@
     margin-bottom: 43px;
 }
 
+.container_button-block{
+    margin-top: 54px;
+}
+.button-block{
+    width: 161px;
+    height: 44px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    align-items: center;
+    text-align: center;
+
+    cursor: pointer;
+}
+
+.button-block__map {
+    margin-bottom: 10px;
+}
+
+.button-block__1 {
+    background: #D41342;
+    color: rgba(255, 255, 255, 1);
+}
+.button-block__2{
+    background: #FFFFFF;
+    color: rgba(212, 20, 67, 1);
+}
+.button-block__list{
+    text-align: center;
+}
