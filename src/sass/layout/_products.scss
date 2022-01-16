@@ -74,7 +74,7 @@
   background: var(--bg-color);
 }
 .products-card--pink::before {
-  content: url(./src/images/pinkice-mob-x1.png);
+  content: url('../images/pinkice-mob-x1.png');
   margin-left: 5.5%;
   margin-top: -40%;
 }
@@ -82,7 +82,7 @@
   background: #f0d1a5;
 }
 .products-card--beige::before {
-  content: url(./src/images/icecoffe-mob-x1.png);
+  content: url('../images/icecoffe-mob-x1.png');
   margin-left: 5.5%;
   margin-top: -40%;
 }
@@ -90,7 +90,7 @@
   background: #c2e297;
 }
 .products-card--green::before {
-  content: url(./src/images/milkshake-mob-x1.png);
+  content: url('../images/milkshake-mob-x1.png');
   margin-left: 5.5%;
   margin-top: -40%;
 }
@@ -99,7 +99,7 @@
   height: 40px;
   border: 0;
   border-radius: 50%;
-  background-image: url(./src/images/arrow-right-x2.jpg);
+  background-image: url('../images/arrow-right-x1.jpg');
   margin: 0 auto;
   display: flex;
   align-items: center;
