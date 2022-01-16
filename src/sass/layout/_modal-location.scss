@@ -46,7 +46,7 @@
     left: 0;
     right: 0;
 
-    transition: transform 6000ms cubic-bezier(.98,.01,.98,0);
+    transition: transform 6000ms cubic-bezier(1,.01,1,-0.21);
     transform: translatex(0);
 
     &:hover,
@@ -59,6 +59,6 @@
     content: "";
     position: absolute;
     width: 98%;
-    transition: transform 6000ms cubic-bezier(.98,.01,.98,0);
+    transition: transform 9000ms cubic-bezier(1,.01,1,-0.21);
     transform: translatex(0);
 }
