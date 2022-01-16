@@ -1,0 +1,51 @@
+@import './layout/header';
+.hero {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 193px;
+  padding-bottom: 160px;
+  // background-color: var(--bg-color);
+  //
+  background-image: url('../images/ice-mob-x1.png'),
+    radial-gradient(circle at 70% 50%, var(--bg-color-2) 173px, var(--bg-color) 0px);
+
+  background-repeat: no-repeat;
+  background-position: 70% 100%;
+  background-size: auto;
+  @media screen and (min-width: $mob) {
+    width: $mob;
+  }
+  &__title {
+    width: 218px;
+    font-family: Titan One;
+    @include font-base(400, 26, 30);
+    // font-size: 26px;
+    // line-height: 30px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 19px;
+  }
+  &__title span {
+    margin-right: auto;
+    // font-family: Titan One;
+    @include font-base(400, 48, 46);
+    // font-size: 48px;
+    // line-height: 96.5%; /* or 46px */
+    // text-transform: uppercase;
+    color: var(--brend-color-1);
+  }
+  &__img {
+    display: none;
+  }
+  &--button {
+    margin-right: 8px;
+  }
+}
+.slider {
+  display: none;
+}
+.achivements {
+  display: none;
+}

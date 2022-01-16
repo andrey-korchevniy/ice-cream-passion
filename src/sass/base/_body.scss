@@ -20,14 +20,17 @@ body {
 
 .container {
   width: 100%;
+  max-width: 320px;
   padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  }
+  outline: 1px solid red;
+
+  // @media screen and (min-width: 480px) {
+  //   width: 480px;
+  // }
 
   @media screen and (min-width: 768px) {
     width: 768px;
@@ -38,4 +41,21 @@ body {
   @media screen and (min-width: 1280px) {
     width: 1280px;
   }
+}
+.button {
+  border: 1px transparent;
+  border-top: 50%;
+  border-radius: 99em;
+  padding: 8px 15px;
+  font-family: DM Sans;
+  font-size: 8px;
+  line-height: 10px;
+}
+.button--1 {
+  background-color: var(--brend-color-1);
+  color: var(--brend-color-2);
+}
+.button--2 {
+  background-color: var(--brend-color-2);
+  color: var(--brend-color-1);
 }
