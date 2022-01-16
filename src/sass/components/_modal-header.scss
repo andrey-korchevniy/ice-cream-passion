@@ -12,10 +12,7 @@
   min-width: 320px;
   min-height: 459px;
 
-  background-color: rgb(255, 184, 202);
-  /*  background-image: url('../image/tasty-desk-x1.png'); */
-  background-repeat: no-repeat;
-
+  background-color: var(--bg-color);
   background-size: 320px;
   border-radius: 20px;
   padding: 40px;
@@ -39,7 +36,7 @@
   width: 40px;
   height: 40px;
   background-color: transparent;
-  border: 2px solid rgba(230, 17, 130, 0.2);
+  border: 2px solid rgba(199, 19, 62, 0.2);
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -51,7 +48,7 @@
   min-width: 240px;
   height: 30px;
   border: 0;
-  padding-left: 15px;
+  padding-left: 40px;
   padding-right: 15px;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -60,16 +57,19 @@
   border-radius: 103px 103px 103px 103px;
   box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
 
-  margin-bottom: 10px;
-  text-align: center;
-  /* vertical-align: middle; */
+  color: var(--text-color);
+  font-family: var($ff-primary), sans-serif;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .modal__input-wrap {
-  width: 100%;
+  position: relative;
+
   display: inline-block;
   text-align: center;
-  margin-top: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
   /*   margin-left: auto;
   margin-right: auto; */
 }
@@ -81,7 +81,7 @@
   font-size: 18px;
   line-height: 1, 2;
   text-align: center;
-  color: #d41443;
+  color: var(--brend-color-1);
   padding-top: 30px;
   margin-bottom: 20px;
 }
@@ -96,60 +96,56 @@
 
 .modal__input-lable {
   display: block;
+  font-weight: 400;
 }
 
 .modal__comment-place {
-  display: block;
+  display: inline-block;
+
+  resize: none;
   min-width: 240px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 8px;
-  margin-bottom: 25px;
+  margin-top: 5px;
   min-height: 60px;
   border: none;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.9);
-}
 
-.modal__input::placeholder {
-  color: rgb(236, 143, 201);
-  font-size: 12px;
-  line-height: 1.2;
-  text-align: center;
-  vertical-align: middle;
+  padding: 20px;
+  padding-left: 40px;
+
+  font-family: var($ff-primary), sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-color);
 }
 
 .modal__input-lable {
-  font-family: DM Sans, sans-serif;
+  display: block;
+  font-family: var($ff-primary), sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.2;
   color: #d41443;
 }
 
-.modal__input-lable {
-  display: block;
-}
-.modal__comment-place::placeholder {
-  color: rgb(236, 143, 201);
-  font-size: 12px;
-  line-height: 1.2;
-  text-align: center;
-}
-
 .modal__form {
   text-align: center;
+  /*   margin-left: auto;
+  margin-right: auto; */
 }
 
 .modal__btn-send {
+  display: block;
   width: 176px;
   height: 44px;
   background: #ffffff;
   border-radius: 22px;
   border: none;
+  margin: 0 auto;
 
-  font-family: DM Sans;
-  /* font-style: normal; */
+  font-family: var($ff-primary), sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.2;
@@ -157,7 +153,11 @@
   align-items: center;
   text-align: center;
   justify-content: center;
-  color: #d41443;
+  color: var(--brend-color-1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  }
 }
 
 .modal__btn-icon {
@@ -168,4 +168,32 @@
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
+}
+
+.modal__title-text {
+  display: inline-block;
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+.modal__input-icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__textarea-wrap {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.modal__textarea-icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
 }
