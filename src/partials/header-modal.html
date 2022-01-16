@@ -1,0 +1,55 @@
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button type="button" class="modal__close-btn" data-modal-close>
+      <svg class="modal__close-icon" width="25" height="25">
+        <use href="./images/symbol-defs.svg#icon-ice_cream_close"></use>
+      </svg>
+    </button>
+    <p class="modal__title">
+      Do you like ice cream? <br />
+      <span class="modal__title-text"
+        >Fill out the form below and get a discount on your first order</span
+      >
+    </p>
+    <form action="#" class="modal__form">
+      <label for="user-name" class="modal__input-lable">name</label>
+      <div class="modal__input-wrap">
+        <input type="text" name="user-name" class="modal__input" required id="user-name" />
+        <svg class="modal__input-icon" width="15" height="15">
+          <use href="./images/symbol-defs.svg#icon-user"></use>
+        </svg>
+      </div>
+
+      <label class="modal__input-lable" for="user-phone">phone number</label>
+      <div class="modal__input-wrap">
+        <input type="phone" name="user-phone" class="modal__input" required id="user-phone" />
+        <svg class="modal__input-icon" width="15" height="15">
+          <use href="./images/symbol-defs.svg#icon-phone"></use>
+        </svg>
+      </div>
+
+      <label class="modal__input-lable" for="user-mail">email</label>
+      <div class="modal__input-wrap">
+        <input type="email" name="user-mail" class="modal__input" required id="user-mail" />
+        <svg class="modal__input-icon" width="15" height="15">
+          <use href="./images/symbol-defs.svg#icon-envelop"></use>
+        </svg>
+      </div>
+
+      <label class="modal__input-lable" for="comments">comment</label>
+      <div class="modal__textarea-wrap">
+        <textarea class="modal__comment-place" name="comments" id="comments"></textarea>
+        <svg class="modal__textarea-icon" width="15" height="15">
+          <use href="./images/symbol-defs.svg#icon-bubble"></use>
+        </svg>
+      </div>
+
+      <button type="submit" class="modal__btn-send">
+        Send us
+        <svg class="modal__btn-icon" width="7" height="10">
+          <use href="./images/symbol-defs.svg#icon-Vector"></use>
+        </svg>
+      </button>
+    </form>
+  </div>
+</div>

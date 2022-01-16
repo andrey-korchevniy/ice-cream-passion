@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ice cream made with passion</title>
-    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,13 +15,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
       integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
-      crossorigin="anonymous"/>
-    
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-
-
-
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
     <include src="./partials/hero-header.html"></include>
 
@@ -37,80 +34,7 @@
 
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
-
-    <!-- Модальное окно в header -->
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <button type="button" class="modal__close-btn" data-modal-close>
-          <svg class="modal__close-icon" width="25" height="25">
-            <use href="./images/symbol-defs.svg#icon-ice_cream_close"></use>
-          </svg>
-        </button>
-        <p class="modal__title">
-          Do you want ice cream? <br />
-          fill out the form below and get a discount on your first order
-        </p>
-        <form action="#" class="modal__form">
-          <label for="user-name" class="modal__input-lable">name</label>
-          <div class="modal__input-wrap">
-            <input
-              type="text"
-              name="user-name"
-              class="modal__input"
-              required
-              id="user-name"
-              placeholder="Jafar"
-            />
-            <svg class="modal__input-icon" width="18" height="18">
-              <use href="./images/symbol-defs.svg#icon-person"></use>
-            </svg>
-          </div>
-
-          <label class="modal__input-lable" for="user-phone">phone number</label>
-          <div class="modal__input-wrap">
-            <input
-              type="phone"
-              name="user-phone"
-              class="modal__input"
-              required
-              id="user-phone"
-              placeholder="937-99-92"
-            />
-          </div>
-
-          <label class="modal__input-lable" for="user-mail">email</label>
-          <div class="modal__input-wrap">
-            <input
-              type="email"
-              name="user-mail"
-              class="modal__input"
-              required
-              id="user-mail"
-              placeholder="example@mail.com"
-            />
-            <svg class="modal__input-icon" width="18" height="18">
-              <use href="./images/symbol-defs.svg#icon-email-black"></use>
-            </svg>
-          </div>
-
-          <label class="modal__input-lable" for="comments">comment</label>
-          <textarea
-            class="modal__comment-place"
-            name="comments"
-            id="comments"
-            placeholder="
-Leave your comment here..."
-          ></textarea>
-
-          <button type="submit" class="modal__btn-send">
-            Send us
-            <svg class="modal__btn-icon" width="7" height="10">
-              <use href="./images/symbol-defs.svg#icon-Vector"></use>
-            </svg>
-          </button>
-        </form>
-      </div>
-    </div>
   </body>
+  <include src="./partials/header-modal.html"></include>
   <script src="./js/modal.js"></script>
 </html>
