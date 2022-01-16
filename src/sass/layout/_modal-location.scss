@@ -42,6 +42,16 @@
 
 
 .modal-location__button{
+    width: 161px;
+  height: 44px;
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  align-items: center;
+  text-align: center;
+
+  cursor: pointer;
     position: absolute;
     top: 0;
     left:50%;
@@ -104,4 +114,5 @@
             width: 1190px;}
     
 }
+
 
