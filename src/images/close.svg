@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="16"
+   height="16"
+   viewBox="0 0 16 16"
+   fill="none"
+   version="1.1"
+   id="svg69"
+   sodipodi:docname="close.svg"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs73" />
+  <sodipodi:namedview
+     id="namedview71"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="13.59375"
+     inkscape:cx="7.3195402"
+     inkscape:cy="8.7908046"
+     inkscape:window-width="1366"
+     inkscape:window-height="742"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer2" />
+  <g
+     id="path67"
+     style="fill:#000000"
+     transform="translate(0.14150503,0.2939745)" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="Layer 1" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer 2">
+    <g
+       id="path65"
+       transform="translate(1.1081358,-3.7853336)">
+      <path
+         id="path1806"
+         style="color:#000000;fill:#000000;fill-opacity:1;-inkscape-stroke:none"
+         d="M 0.5078125,4.5273437 -0.21289063,5.2207031 13.269531,19.220703 13.990234,18.527344 Z M 0.14774303,4.8747791 13.629263,18.874779 M 13.495935,4.8046182 -0.14329098,18.6519 0.57080363,19.353998 14.210029,5.506716 Z M 0.03336923,18.820008 14.033369,5.3385481" />
+    </g>
+  </g>
+</svg>
