@@ -11,12 +11,12 @@ body {
   }
 }
 
-.section {
+/* .section {
   // padding: 60px 0 60px 0;
   // @media screen and (min-width: 1200px) {
   //   padding: 94px 0 94px 0;
   // }
-}
+} */
 
 .container {
   width: 100%;
@@ -40,8 +40,7 @@ body {
   }
 
   @media screen and (min-width: 1280px) {
-    width: 1280px;
-  }
+    width: 1280px;}
 }
 .button {
   border-top: 50%;

@@ -276,6 +276,7 @@
 
 .container__button-block {
   margin-top: 54px;
+
   @media screen and (min-width: 768px) {
       margin-top: 81px;
   }
@@ -301,6 +302,7 @@
    @media screen and (min-width: 1280px) {
      width: 198px;
    }
+
 }
 
 .button-block__2 {
@@ -340,17 +342,37 @@
 .button-block__1 {
   background: #d41342;
   color: rgba(255, 255, 255, 1);
+
+  @media screen and(min-width:768px) {
+    width: 192px;
+  margin-right: 15px;}
+
+    @media screen and(min-width:1280px) {
+      width: 198px;}
 }
 
 .button-block__2 {
   background: var(--brend-color-2);
   color: rgba(212, 20, 67, 1);
+
+  @media screen and(min-width:768px) {
+    width: 174px;}
+
+    @media screen and(min-width:1280px) {
+      width: 180px;}
+
+    &:hover,
+    &:focus{
+      background-color: #ECEBEB;
+    }
+
 }
 
 .button-block__list{
     text-align: center;
     text-decoration: none;
     list-style: none;
+
     @media screen and (min-width: 768px) {
         display: flex;
         align-items: center;
