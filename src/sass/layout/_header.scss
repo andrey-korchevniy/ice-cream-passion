@@ -26,4 +26,20 @@
 .button--header {
   display: none;
 }
+.logo {
+  display: flex;
+  align-items: center;
+  &__icon {
+    margin-right: 20px;
+  }
+  &__text {
+    font-family: Titan One;
+    @include font-base(400, 26, 30);
+    // font-size: 26px;
+    // line-height: 30px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--brend-color-1);
+  }
+}
 @import './components/mob-menu';
