@@ -281,3 +281,37 @@
   margin-bottom: 0;
   margin-top: 30px;
 }
+.products-block {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+
+  transition: all 800ms;
+}
+.products-front,
+.products-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.products-front {
+  z-index: 2;
+  transform: rotateY(0deg);
+  backface-visibility: hidden;
+}
+.products-back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-color);
+  border-radius: 24px;
+  width: 100%;
+  height: 100%;
+  padding: 0 15px 60px 15px;
+  backface-visibility: hidden;
+  transform: rotateY(-180deg);
+}
+.products__item:hover .products-block {
+  transform: rotateY(-180deg);
+}
