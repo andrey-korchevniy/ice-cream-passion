@@ -142,13 +142,14 @@ color: var(--brend-color-1);
       margin-top: 30px;
       margin-left: auto;
       margin-right: auto; 
+      color: var(--brend-color-1);
       background: #fff;
-      border: 0;
+      border: 2px solid rgba(199, 19, 62, 0.2);
       }
 
     &__textarea{
         height:120px ;
-        padding: 12px 16px;
+        padding: 12px 16px 12px 30px;
         resize: none; 
         cursor: pointer;
         border: 1px solid rgba(33, 33, 33, 0.2);
@@ -174,18 +175,19 @@ color: var(--brend-color-1);
 
 .desktop{
   @media screen and(min-width:1280px) {
-      display: flex;}
-  }
+      display: flex;
+    justify-content:space-between ;
+  }}
 
 .indian {
-  width: 700px;
+  width: 600px;
   margin-top: 52px;
   @media screen and(max-width:1279px) {
       display: none;}
   }
 
 .indian__foto{
-  width: 700px;
+  width: 600px;
   height: 412px;
 }
 
@@ -195,4 +197,11 @@ color: var(--brend-color-1);
   top: 75%;
   transform: translateY(-75%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form__textarea-icon {
+  position: absolute;
+  bottom: 33%;
+  left: 15px;
+  transform: translateY(-33%);
 }
