@@ -11,6 +11,7 @@
     width: $mob;
   }
   @media screen and (min-width: $tab) {
+    top: 37px;
     width: $tab;
   }
   @media screen and (min-width: $desc) {
@@ -18,9 +19,12 @@
   }
   &__nav {
     display: none;
-  }
-  &__menu {
-    margin-left: auto;
+    @media screen and (min-width: $desc) {
+      margin-left: 110px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 }
 .button--header {
@@ -40,6 +44,12 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: var(--brend-color-1);
+  }
+}
+.menu {
+  display: flex;
+  &__item + &__item {
+    margin-left: 20px;
   }
 }
 @import './components/mob-menu';

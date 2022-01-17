@@ -16,6 +16,16 @@
   @media screen and (min-width: $mob) {
     width: $mob;
   }
+  @media screen and (min-width: $tab) {
+    width: $tab;
+    padding-top: 120px;
+    padding-bottom: 173px;
+    background-image: url('../images/ice-tab-x1.png'),
+      radial-gradient(circle at 65% 50%, var(--bg-color-2) 170px, var(--bg-color) 0px);
+  }
+  @media screen and (min-width: $desc) {
+    width: $desc;
+  }
   &__title {
     width: 218px;
     font-family: Titan One;
@@ -26,6 +36,9 @@
     text-transform: uppercase;
     color: #ffffff;
     margin-bottom: 19px;
+    @media screen and (min-width: $tab) {
+      @include font-base(400, 22, 25);
+    }
   }
   &__title span {
     margin-right: auto;
@@ -35,6 +48,9 @@
     // line-height: 96.5%; /* or 46px */
     // text-transform: uppercase;
     color: var(--brend-color-1);
+    @media screen and (min-width: $tab) {
+      @include font-base(400, 34, 31);
+    }
   }
   &__img {
     display: none;
@@ -42,10 +58,11 @@
   &--button {
     margin-right: 8px;
   }
+  &-slider {
+    display: none;
+  }
 }
-.slider {
-  display: none;
-}
+
 .achivements {
   display: none;
 }
