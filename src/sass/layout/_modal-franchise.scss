@@ -6,7 +6,7 @@
     left: 0;
     text-align: center;
     overflow:hidden;
-    background-color:#FFB8CA;
+    background-color:var(--bg-color-3);
     padding-left:15px;
     padding-right: 15px;
     pointer-events: auto;
@@ -15,6 +15,15 @@
     display: none;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* .modal-franchise__bg{
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--bg-color);
+} */
 
 
 .modal-franchise__start{
@@ -98,7 +107,7 @@ line-height: 2.55;
         padding-bottom: 12px;
         padding-left: 42px;
         border: 1px solid rgba(33, 33, 33, 0.2);
-        border-radius: 4px;
+        border-radius: 103px 103px 103px 103px;
         cursor: pointer;
         transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
       }
@@ -141,75 +150,24 @@ line-height: 2.55;
         resize: none; 
         cursor: pointer;
         border: 1px solid rgba(33, 33, 33, 0.2);
-        border-radius: 4px;
+        border-radius: 103px 103px 103px 103px;
         transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
       }
 
   }
 
-.checkbox{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 20px;
-
-    &__imput{
-    position: absolute;
-    appearance: none;
-  
-
-      &:checked + .checkbox__icon{
-
-        background-size: contain;
-        background-origin: border-box;
-      }
-    }
-
-    &__icon{
-        border: 2px;
-        border-radius: 4px;
-        margin-right: 8px;
-        width: 16px;
-        height: 15px;
-        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        background-image 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        background-size 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        backgroud-origin 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      }
-
-    &__text{
-        display: flex;
-     
-      letter-spacing: 0.03em;
-      
-      color: #757575;
-      }
-
-    &__agreement{
-      color: #D41342;
-    }
-
-    &.checkbox__agreement{
-        padding-left: 5px;
-        font-size: 14px;
-        line-height: 1.71;
-        letter-spacing: 0.03em;
-        text-decoration-line: underline;
-      }
-}
-
 .modal-franchise__button{
-  width: 161px;
-  height: 44px;
-  font-family: DM Sans;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.31;
-  right: 35px;
-  position: fixed;
-  cursor: pointer;
-    background-color:#D41342;}
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: 2px solid rgba(199, 19, 62, 0.2);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;}
 
 
 .desktop{
