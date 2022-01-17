@@ -40,7 +40,8 @@ body {
   }
 
   @media screen and (min-width: 1280px) {
-    width: 1280px;}
+    width: 1280px;
+  }
 }
 .button {
   cursor: pointer;
@@ -55,8 +56,16 @@ body {
 .button--1 {
   background-color: var(--brend-color-1);
   color: var(--brend-color-2);
+  &:hover,
+  &:focus {
+    background-color: var(--button-hover-1);
+  }
 }
 .button--2 {
   background-color: var(--brend-color-2);
   color: var(--brend-color-1);
+  &:hover,
+  &:focus {
+    background-color: var(--button-hover-2);
+  }
 }
