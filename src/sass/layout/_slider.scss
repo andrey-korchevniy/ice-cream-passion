@@ -1,32 +1,31 @@
 .wrapper{
     position: relative;
     width: 100%;
+    
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 80px;
-    padding-bottom: 125px;
 }
-.slider{
+.wrapper__slider{
+    height: auto;
     padding-left: 0;
     position: relative;
     max-width: 280px;
     overflow: hidden;
-    height: auto;
 }
 .slider__slides{
     position: relative;
-    width: 300%;
+    width: 400%;
     height: 100%;
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
-    display: flex;
-    
+    display: flex; 
 }
 .slider__slide{
-    width: 100%;
+    width: 50%;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -36,18 +35,8 @@
 input[name="r"] {
     visibility: hidden;
     position: absolute;
-
-}
-.slider__navigation{
-    position: absolute;
-    left: 105px;
-    display: flex;
-    justify-content: center;
-    bottom: 0;
-    
 }
 .slider__text-conteiner{
-    background-color: tomato;
     width: 280px;
     display: flex;
     justify-content: center;
@@ -65,8 +54,8 @@ input[name="r"] {
         left: 63px;
         top: 13px;
         }
-    
 }
+
 .slider_icon:not(:last-child){
     margin-right: 10px;
 }
@@ -94,6 +83,7 @@ position: relative;
     }
 }
 .slider__name{
+    position: relative;
     font-family: DM Sans;
     font-size: 14px;
     font-style: normal;
@@ -102,15 +92,38 @@ position: relative;
     letter-spacing: 0em;
     margin-top: 18px;
     margin-bottom: 30px;
-    position: relative;}
+    }
 
+.slider__navigation{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    }
+    
 .bar{
-    width: 12px;
+width: 12px;
 height: 12px;
 background-color: #D9D9D9;
 opacity: .7;
 border-radius: 50%;
+&:hover,&:focus{
+background-color: #D31342;
+    }
 &:not(:last-child){
     margin-right: 18px;
 }
+}
+#r1:checked ~ .r1 {
+    margin-left: 0;
+}
+#r2:checked ~.r2 {
+    margin-left: -25%;
+}
+#r2:checked ~ .r3 {
+    margin-left: -50%;
+}
+#r2:checked ~ .r4 {
+    margin-left: -100%;
 }
