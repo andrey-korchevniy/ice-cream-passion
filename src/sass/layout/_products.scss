@@ -1,4 +1,4 @@
-.container {
+.container-products {
   @media screen and (min-width: 1280px) {
     padding-left: 117px;
     padding-right: 117px;
@@ -22,13 +22,13 @@
     text-transform: uppercase;
     color: var(--brend-color-3);
     font-family: Titan One;
-    @include font(400, 18, 1.17);
+    @include font-base(400, 18, 21);
 
     @media screen and (min-width: 768px) {
-      @include font(400, 26, 1.15);
+      @include font-base(400, 26, 30);
     }
     @media screen and (min-width: 1280px) {
-      @include font(400, 30, 1.13);
+      @include font-base(400, 30, 34);
       letter-spacing: 0.04em;
     }
   }
@@ -39,14 +39,16 @@
     color: var(--brend-color-1);
     font-family: Titan One;
     letter-spacing: 0.04em;
-    @include font(400, 34, 1.15);
+    @include font-base(400, 34, 39);
 
     @media screen and (min-width: 768px) {
-      @include font(400, 48, 1.15);
+      @include font-base(400, 48, 55);
+      margin-bottom: 150px;
     }
     @media screen and (min-width: 1280px) {
-      @include font(400, 58, 1.14);
+      @include font-base(400, 58, 66);
       letter-spacing: 0.06em;
+      margin-bottom: 259px;
     }
   }
   &__list {
@@ -69,8 +71,11 @@
       width: calc((100% - 60px) / 3);
     }
   }
-  &__item:not(:last-child) {
-    margin-bottom: 130px;
+  &__item:not(:first-child) {
+    margin-top: 130px;
+    @media screen and (min-width: 768px) {
+      margin-top: 0px;
+    }
   }
   &__item:not(:last-child) {
     @media screen and (min-width: 768px) {
@@ -97,21 +102,22 @@
   @media screen and (min-width: 1280px) {
     padding: 0 44px 50px 44px;
   }
-  @media screen and (max-width: 767px) {
-    width: 280px;
-  }
+
   &__title {
-    margin-top: 22px;
+    margin-top: 161px;
     position: relative;
     text-align: center;
     text-transform: uppercase;
     color: var(--brend-color-2);
     font-family: Titan One;
     letter-spacing: 0.04em;
-    @include font(400, 20, 1.15);
-
+    @include font-base(400, 20, 23);
+    @media screen and (min-width: 768px) {
+      margin-top: 152px;
+    }
     @media screen and (min-width: 1280px) {
-      @include font(400, 30, 1.13);
+      @include font-base(400, 30, 34);
+      margin-top: 163px;
     }
   }
   &__title::before {
@@ -131,56 +137,136 @@
     color: var(--brend-color-2);
     font-family: DM Sans;
     letter-spacing: 0.04em;
-    @include font(700, 14, 1.52);
+    @include font-base(700, 14, 21);
 
     @media screen and (min-width: 768px) {
-      @include font(700, 14, 1.76);
+      @include font-base(700, 14, 25);
     }
     @media screen and (min-width: 1280px) {
-      @include font(700, 16, 1.76);
+      @include font-base(700, 16, 28);
     }
   }
 }
 .products-card--pink {
   background: var(--bg-color);
 }
-.products-card--pink::before {
-  margin-left: 0;
-  margin-top: -56%;
-  content: url('../images/pinkice-mob-x1.png');
 
-  /*@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    content: url('../images/pinkice-mob-x2.png');
-  }
+.products-card--pink::before {
+  content: ' ';
+  position: absolute;
+  background-size: contain;
+  width: 249px;
+  height: 252px;
+  top: -115px;
+  left: 50%;
+  transform: translate(-50%);
 
   @media screen and (min-width: 768px) {
-    content: url('../images/pinkice-tab-x1.png');
+    width: 220px;
+    height: 226px;
+    top: -105px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 335px;
+    height: 335px;
+    top: -205px;
+  }
+  background-image: url('../images/pinkice-mob-x1.png');
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('../images/pinkice-mob-x2.png');
+  }
+  @media screen and (min-width: 768px) {
+    background-image: url('../images/pinkice-tab-x1.png');
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      content: url('../images/pinkice-tab-x2.png');
+      background-image: url('../images/pinkice-tab-x2.png');
     }
   }
-  @media screen and (min-width: 1200px) {
-    content: url('../images/pinkice-desk-x1.png');
+  @media screen and (min-width: 1280px) {
+    background-image: url('../images/pinkice-desk-x1.png');
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      content: url('../images/pinkice-desk-x2.png');
+      background-image: url('../images/pinkice-desk-x2.png');
     }
-  }*/
+  }
 }
 .products-card--beige {
   background: #f0d1a5;
 }
 .products-card--beige::before {
-  content: url('../images/icecoffe-mob-x1.png');
-  margin-left: 0;
-  margin-top: -56%;
+  content: ' ';
+  position: absolute;
+  background-size: contain;
+  width: 249px;
+  height: 252px;
+  top: -115px;
+  left: 50%;
+  transform: translate(-50%);
+
+  @media screen and (min-width: 768px) {
+    width: 220px;
+    height: 226px;
+    top: -105px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 335px;
+    height: 335px;
+    top: -205px;
+  }
+  background-image: url('../images/icecoffe-mob-x1.png');
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('../images/icecoffe-mob-x2.png');
+  }
+  @media screen and (min-width: 768px) {
+    background-image: url('../images/icecoffe-tab-x1.png');
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/icecoffe-tab-x2.png');
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    background-image: url('../images/icecoffe-desk-x1.png');
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/icecoffe-desk-x2.png');
+    }
+  }
 }
 .products-card--green {
   background: #c2e297;
 }
 .products-card--green::before {
-  content: url('../images/milkshake-mob-x1.png');
-  margin-left: 0;
-  margin-top: -56%;
+  content: ' ';
+  position: absolute;
+  background-size: contain;
+  width: 249px;
+  height: 252px;
+  top: -115px;
+  left: 50%;
+  transform: translate(-50%);
+
+  @media screen and (min-width: 768px) {
+    width: 220px;
+    height: 226px;
+    top: -105px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 335px;
+    height: 335px;
+    top: -205px;
+  }
+  background-image: url('../images/milkshake-mob-x1.png');
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('../images/milkshake-mob-x2.png');
+  }
+  @media screen and (min-width: 768px) {
+    background-image: url('../images/milkshake-tab-x1.png');
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/milkshake-tab-x2.png');
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    background-image: url('../images/milkshake-desk-x1.png');
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/milkshake-desk-x2.png');
+    }
+  }
 }
 .products__button {
   width: 40px;
