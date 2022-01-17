@@ -1,6 +1,13 @@
 <section class="hero">
+  <!--! Header -->
   <header class="header">
-    <img class="logo__img" src="images/logo.png" alt="logo" />
+    <!-- <img class="logo__img" src="images/logo.png" alt="logo" /> -->
+    <div class="logo">
+      <svg class="logo__icon" width="40" height="40">
+        <use href="images/symbol-defs.svg#icecream"></use>
+      </svg>
+      <p class="logo__text">icecream</p>
+    </div>
     <nav class="header__nav">
       <ul class="menu">
         <li class="menu__item">
@@ -14,14 +21,26 @@
     </nav>
 
     <button class="button button--header" type="button">Buy now</button>
-    <img class="header__menu" src="images/menu.svg" alt="menu" />
-
+    <!--! Mobile Menu Button -->
+    <button
+      class="mob-menu js-open-menu"
+      type="button"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <!-- <img class="header__menu" src="images/menu.svg" alt="menu" /> -->
+      <svg class="mob-menu__icon" width="25" height="25">
+        <use href="images/symbol-defs.svg#mob-menu"></use>
+      </svg>
+    </button>
   </header>
   <div class="container">
     <!-- <span class="hero__white">ice cream made with</span>  -->
     <h1 class="hero__title">ice cream made with <span>passion</span></h1>
-    <button type="button" class="button button--1 hero--button">Products</button>
-    <button type="button" class="button button--2">How it’s made?</button>
+    <a class="button button--1 hero--button" href="#products">Products</a>
+    <a class="button button--2" href="#howitmades">How it’s made?</a>
+    <!-- <button type="button" class="button button--1 hero--button">Products</button>
+    <button type="button" class="button button--2">How it’s made?</button> -->
     <div class="slider">
       <img class="slader__img" src="images/milk-desk-x1.png" alt="milk" />
       <p class="slider__text">
@@ -30,7 +49,7 @@
       </p>
       <button type="button" class="button">arrow</button>
     </div>
-    <!-- <img class="hero__img" src="images/ice-mob-x1.png" alt="icecream" /> -->
+    <!-- Achivki-->
     <ul class="achivements">
       <li class="achivements__item">
         <p class="achivements__num">16</p>

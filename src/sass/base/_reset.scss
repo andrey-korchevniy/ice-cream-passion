@@ -20,8 +20,12 @@ ul,
 li {
   margin: 0;
 }
-
-.link {
+button {
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid transparent;
+}
+a {
   text-decoration: none;
 }
 

@@ -11,12 +11,12 @@ body {
   }
 }
 
-.section {
+/* .section {
   // padding: 60px 0 60px 0;
   // @media screen and (min-width: 1200px) {
   //   padding: 94px 0 94px 0;
   // }
-}
+} */
 
 .container {
   width: 100%;
@@ -40,14 +40,14 @@ body {
   }
 
   @media screen and (min-width: 1280px) {
-    width: 1280px;
-  }
+    width: 1280px;}
 }
 .button {
-  border: 1px transparent;
+  cursor: pointer;
   border-top: 50%;
   border-radius: 99em;
-  padding: 8px 15px;
+  // height: 24px;
+  padding: 7px 13px;
   font-family: DM Sans;
   font-size: 8px;
   line-height: 10px;
