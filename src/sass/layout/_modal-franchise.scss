@@ -16,15 +16,6 @@
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* .modal-franchise__bg{
-  position: relative;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: var(--bg-color);
-} */
-
 
 .modal-franchise__start{
     margin-top: 50px;
@@ -149,7 +140,7 @@ color: var(--brend-color-1);
 
     &__textarea{
         height:120px ;
-        padding: 12px 16px 12px 30px;
+        padding: 12px 16px 12px 45px;
         resize: none; 
         cursor: pointer;
         border: 1px solid rgba(33, 33, 33, 0.2);
@@ -160,22 +151,14 @@ color: var(--brend-color-1);
   }
 
 .modal-franchise__button{
-  position: absolute;
-  top: 14px;
-  right: 14px;
-  width: 40px;
-  height: 40px;
-  background-color: transparent;
-  border: 2px solid rgba(199, 19, 62, 0.2);
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;}
+  @extend %botton-ice;}
 
 
 .desktop{
   @media screen and(min-width:1280px) {
       display: flex;
+      padding-left: 40px;
+      padding-right: 40px;
     justify-content:space-between ;
   }}
 
