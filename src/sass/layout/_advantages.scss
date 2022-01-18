@@ -7,9 +7,6 @@
   @media screen and (min-width: 768px) {
     display: flex;
   }
-  &__crawler {
-    overflow: hidden;
-  }
   &__title {
     font-family: 'Titan One';
     font-size: 36px;
@@ -73,6 +70,7 @@
     position: absolute;
     left: 0;
     top: 0;
+    animation: rotate 3s infinite;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/minmilk-x2.png);
     }
@@ -89,6 +87,7 @@
     position: absolute;
     left: 0;
     top: 0;
+    animation: rotate 3s infinite;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/vitamins-x2.png);
     }
@@ -105,8 +104,18 @@
     position: absolute;
     left: 0;
     top: 0;
+    animation: rotate 3s infinite;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/candy-x2.png);
     }
   }
+}
+
+@keyframes rotate {
+	0% {
+	  transform: rotateY(90deg);
+	}
+	100% {
+	  transform: rotateY(-90deg);
+	}
 }
