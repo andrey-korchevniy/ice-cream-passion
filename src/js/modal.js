@@ -1,20 +1,32 @@
 
-(() => {
-  const refs = {
-    openModalBtn: document.querySelector('[data-modal-open]'),
-    closeModalBtn: document.querySelector('[data-modal-close]'),
-    modal: document.querySelector('[data-modal]'),
-  };
+var modal1 = document.getElementById('modal-location');
+var btn1 = document.getElementById("btn-modal-location");
+var video = document.getElementById("video");
+var span1 = document.getElementsByClassName("location-close")[0];
+btn1.onclick = function() {
+ video.play()
+    modal1.style.display = "block";
+    let start = Date.now();
 
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
+  let timer = setInterval(function() {
+    let timePassed = Date.now() - start;
 
-  function toggleModal() {
-    refs.modal.classList.toggle('target');
-  }
-})();
+    video.style.display = "none";
 
-var modal = document.getElementById('myModal');
+    if (timePassed > 9000) clearInterval(timer);
+
+  }, 6000);
+}
+span1.onclick = function() {
+    modal1.style.display = "none";
+}
+window.onclick = function(event) {
+    if (event.target == modal1) {
+        modal1.style.display = "none";
+    }
+}
+
+var modal = document.getElementById('modal-franchise');
 var btn = document.getElementById("myBtn");
 var span = document.getElementsByClassName("close")[0];
 btn.onclick = function() {
@@ -27,17 +39,4 @@ window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
-}
-
-video.onclick = function() {
-  let start = Date.now();
-
-  let timer = setInterval(function() {
-    let timePassed = Date.now() - start;
-
-    video.style.left = timePassed / 3 + 'px';
-
-    if (timePassed > 9000) clearInterval(timer);
-
-  }, 6000);
 }
