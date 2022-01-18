@@ -5,36 +5,53 @@
       <ul class="products__list">
           <li class="products__item">
 
-            <div class="products-block">
+            <div class="products-block card">
               <div class="products-front">
-                   <div class="products-card products-card--pink">
+                <div class="products-card products-card--pink">
                   <h3 class="products-card__title">ice cream</h3>
-                  <p class="products-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. dolore magna aliqua facilisis.</p>
-                  <button class="products__button" type="button"></button>
+                    <p class="products-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. dolore magna aliqua facilisis.</p>
+                    <button class="products__button intro__btn" type="button"></button>
                    </div>
                 </div>
-                   <div class="products-back">
-                    <p class="products-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. dolore magna aliqua facilisis.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. dolore magna aliqua facilisis.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
-                   </div>
-             </div>
-                
+                   <div class="products-back products-back--pink">
+                    <p class="products-card__text products-card__text--back">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, tempore! Nostrum asperiores soluta consectetur laborum. Tempora, dolorum deleniti. Unde eos odit facilis vitae ratione blanditiis provident corporis illo rerum </p>
+                    <button class="products__button intro__btn" type="button"></button>
+                    </div>
           </li>
 
 
           <li class="products__item">
-            <div class="products-card products-card--beige">
-                <h3 class="products-card__title">ice coffee</h3>
-                <p class="products-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. dolore magna aliqua facilisis.</p>
-                <button class="products__button" type="button"></button>
-            </div>
+            <div class="products-block card">
+              <div class="products-front">
+                <div class="products-card products-card--beige">
+                  <h3 class="products-card__title">ice coffee</h3>
+                    <p class="products-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. dolore magna aliqua facilisis.</p>
+                    <button class="products__button intro__btn" type="button"></button>
+                   </div>
+                </div>
+                   <div class="products-back products-back--beige">
+                    <p class="products-card__text products-card__text--back">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, tempore! Nostrum asperiores soluta consectetur laborum. Tempora, dolorum deleniti. Unde eos odit facilis vitae ratione blanditiis provident corporis illo rerum </p>
+                    <button class="products__button intro__btn" type="button"></button>
+                    </div>
+
+             </div>
         </li>
 
         <li class="products__item">
-            <div class="products-card products-card--green">
+          <div class="products-block card">
+            <div class="products-front">
+              <div class="products-card products-card--green">
                 <h3 class="products-card__title">milkshakes</h3>
-                <p class="products-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. dolore magna aliqua facilisis.</p>
-                <button class="products__button" type="button"></button>
-            </div>
+                  <p class="products-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. dolore magna aliqua facilisis.</p>
+                  <button class="products__button intro__btn" type="button"></button>
+                 </div>
+              </div>
+                 <div class="products-back products-back--green">
+                  <p class="products-card__text products-card__text--back">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, tempore! Nostrum asperiores soluta consectetur laborum. Tempora, dolorum deleniti. Unde eos odit facilis vitae ratione blanditiis provident corporis illo rerum </p>
+                  <button class="products__button intro__btn" type="button"></button>
+                  </div>
+
+           </div>
         </li>
 
       </ul>
@@ -42,3 +59,13 @@
     </div>
 </section>
 
+<script>
+  var btns = document.getElementsByClassName('intro__btn');
+var par = document.getElementsByClassName('card');
+btns[0].onclick = function() {
+  par[0].classList.add("active");
+}
+btns[1].onclick = function() {
+  par[0].classList.remove("active");
+}
+</script>
