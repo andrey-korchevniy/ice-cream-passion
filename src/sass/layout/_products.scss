@@ -474,7 +474,8 @@
     }
   }
 }
-.products__item:hover .products-block {
+.products__item:hover .products-block,
+.products__item:focus .products-block {
   transform: rotateY(-180deg);
 }
 
