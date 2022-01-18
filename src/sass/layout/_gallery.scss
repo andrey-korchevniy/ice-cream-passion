@@ -1,11 +1,17 @@
 .gallery {
   width: 100%;
+  background-image: linear-gradient(to bottom, #fff5f6 50%, #ffffff 50%);
 
   &__container {
     width: 100%;
     max-width: 480px;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    // todo поменять
 
     // outline: 1px solid red;
 
@@ -23,12 +29,93 @@
     }
   }
 
-  &__picture {
+  &__second-container {
+    width: 100%;
     display: flex;
+    align-items: center;
     justify-content: center;
   }
 
-  &__photo {
-    width: 480px;
+  &__box--up {
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 50px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 70px;
+    }
+  }
+
+  &__box {
+    @media screen and (min-width: 1200px) {
+      padding: 6px 3px 6px 3px;
+    }
+  }
+
+  &__image {
+    padding: 0;
+    margin: 2px 1px 2px 1px;
+    width: 39px;
+    border-radius: 5px;
+    transform: scale(1);
+
+    transition-property: width;
+    transition-duration: 700ms;
+    transition-timing-function: linear;
+    transition-delay: 0;
+
+    @media screen and (min-width: 768px) {
+      width: 85px;
+      margin: 4px 2px 4px 2px;
+      border-radius: 12px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 138px;
+      border-radius: 20px;
+    }
+
+    &:hover {
+      width: 60px;
+
+      @media screen and (min-width: 768px) {
+        width: 130px;
+      }
+
+      @media screen and (min-width: 1200px) {
+        width: 250px;
+      }
+    }
+  }
+
+  &__image--bigger {
+    width: 80px;
+
+    @media screen and (min-width: 768px) {
+      width: 174px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 284px;
+    }
+
+    transition-property: width;
+    transition-duration: 500ms;
+    transition-timing-function: linear;
+    transition-delay: 0;
+
+    &:hover {
+      width: 100px;
+
+      @media screen and (min-width: 768px) {
+        width: 217px;
+      }
+
+      @media screen and (min-width: 1200px) {
+        width: 354px;
+      }
+    }
   }
 }
