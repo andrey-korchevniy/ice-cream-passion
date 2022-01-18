@@ -1,6 +1,6 @@
 .header {
   position: absolute;
-  top: 30px;
+  top: 0px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 99;
@@ -11,7 +11,7 @@
     width: $mob;
   }
   @media screen and (min-width: $tab) {
-    // top: 30px;
+    top: 30px;
     width: $tab;
     padding: 6px 34px 0;
   }
