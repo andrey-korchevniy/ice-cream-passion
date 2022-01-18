@@ -9,6 +9,7 @@
   position: fixed;
   background: rgba(0, 0, 0, 0.2);
   transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 123;
 }
 
 .modal-about {
@@ -38,8 +39,9 @@
   font-family: $ff-secondary;
   color: var(--brend-color-1);
   text-align: center;
-  font-size: 27px;
-  margin-bottom: 20px;
+  font-size: 32px;
+  line-height: 1.2;
+  margin-bottom: 40px;
 }
 
 .modal-about__close-btn {
@@ -84,8 +86,7 @@
     border-radius: 5px;
   }
   .modal-about__title {
-    margin-bottom: 15px;
-    font-size: 16px;
+    @include font(400, 18, 1.2);
     letter-spacing: 0.03em;
   }
   .modal-about__item-text {
@@ -93,10 +94,8 @@
     padding-right: 10px;
   }
   .modal-about__text {
+    @include font(700, 16, 1.2);
     font-family: $ff-primary;
-    font-size: 16px;
-    line-height: 1.2;
-    font-weight: 700;
     letter-spacing: 0.03em;
     color: black;
   }
@@ -104,19 +103,21 @@
 
 @media screen and (min-width: 480px) {
   .modal-about__item-text {
-    width: 50%;
+    max-width: 50%;
+    text-align: center;
+    border-radius: 10px;
   }
-  .image-wraper {
-    width: 50%;
-  }
+
   .modal-about__item {
     display: flex;
     margin-bottom: 20px;
-    /* border: 1px solid black; */
   }
 
   .modal-about__title {
     margin-bottom: 15px;
+  }
+  .image-wraper {
+    max-width: 50%;
   }
 
   .modal-about__item--mod {
@@ -129,31 +130,32 @@
   .modal-about__item-text {
     padding-left: 20px;
     padding-right: 20px;
-
-    margin-left: -10px;
-    margin-right: 10px;
-    border-radius: 5%;
   }
-  .modal-about__item-text--mod {
-    margin-right: -10px;
-    margin-left: 10px;
+
+  .image-wraper {
+    transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .modal-about__item:hover .image-wraper {
+    transform: scale(1.03);
+  }
+
+  .modal-about__item-text {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .modal-about__item:hover .modal-about__item-text {
+    background-color: rgba(255, 255, 255, 0.5);
   }
 
   .modal-about__text {
     font-family: $ff-primary;
-    font-size: 16px;
-    line-height: 1.2;
-    font-weight: 700;
+    @include font(700, 16, 1.2);
     letter-spacing: 0.03em;
     color: black;
   }
-}
-@media screen and (min-width: 768px) {
   .modal-about__item-text {
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .modal-about__item:hover .modal-about__item-text {
-    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
