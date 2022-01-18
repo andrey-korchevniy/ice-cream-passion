@@ -1,11 +1,11 @@
 
-var modal = document.getElementById('modal-location');
-var btn = document.getElementById("btn-modal-location");
+var modal1 = document.getElementById('modal-location');
+var btn1 = document.getElementById("btn-modal-location");
 var video = document.getElementById("video");
-var span = document.getElementsByClassName("modal-location-close")[0];
-btn.onclick = function() {
+var span1 = document.getElementsByClassName("location-close")[0];
+btn1.onclick = function() {
  video.play()
-    modal.style.display = "block";
+    modal1.style.display = "block";
     let start = Date.now();
 
   let timer = setInterval(function() {
@@ -17,16 +17,16 @@ btn.onclick = function() {
 
   }, 6000);
 }
-span.onclick = function() {
-    modal.style.display = "none";
+span1.onclick = function() {
+    modal1.style.display = "none";
 }
 window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
+    if (event.target == modal1) {
+        modal1.style.display = "none";
     }
 }
 
-var modal = document.getElementById('myModal');
+var modal = document.getElementById('modal-franchise');
 var btn = document.getElementById("myBtn");
 var span = document.getElementsByClassName("close")[0];
 btn.onclick = function() {

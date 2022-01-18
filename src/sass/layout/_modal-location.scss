@@ -35,6 +35,7 @@
 
 .modal-location__button {
     @extend %button-ice;
+    z-index: 101;
 }
 
 .video{
