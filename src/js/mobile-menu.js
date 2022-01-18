@@ -7,7 +7,7 @@
   const closeMenuLnk3 = document.querySelector('.link-3');
   const closeMenuLnk4 = document.querySelector('.link-4');
   const closeMenuLnk5 = document.querySelector('.link-5');
-  const closeMenu = document.querySelector('.modal-bynow-open');
+  const closeMenu = document.querySelector('.button--menu');
 
   const toggleMenu = () => {
     const isMenuOpen = openMenuBtn.getAttribute('aria-expanded') === 'true' || false;

@@ -54,6 +54,15 @@ body {
   font-family: DM Sans;
   font-size: 8px;
   line-height: 10px;
+
+  &__wrapper {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+  }
+  &__icon {
+    margin-left: 12px;
+  }
 }
 .button--1 {
   background-color: var(--brend-color-1);

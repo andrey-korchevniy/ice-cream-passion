@@ -1,6 +1,6 @@
 .header {
   position: fixed;
-  top: 0;
+  top: 30px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 99;
@@ -11,8 +11,9 @@
     width: $mob;
   }
   @media screen and (min-width: $tab) {
-    top: 37px;
+    // top: 30px;
     width: $tab;
+    padding: 6px 34px 0;
   }
   @media screen and (min-width: $desc) {
     width: $desc;
@@ -29,6 +30,13 @@
 }
 .button--header {
   display: none;
+  @media screen and (min-width: $tab) {
+    display: block;
+    height: 44px;
+    width: 160px;
+    @include font-base(700, 16, 21);
+    margin-left: 30px;
+  }
 }
 .logo {
   display: flex;

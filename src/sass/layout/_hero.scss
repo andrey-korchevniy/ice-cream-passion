@@ -18,13 +18,23 @@
   }
   @media screen and (min-width: $tab) {
     width: $tab;
+    // padding-top: 0px;
     padding-top: 120px;
-    padding-bottom: 173px;
+    padding-bottom: 21px;
     background-image: url('../images/ice-tab-x1.png'),
       radial-gradient(circle at 65% 50%, var(--bg-color-2) 170px, var(--bg-color) 0px);
+    background-position: 65% 100%;
   }
   @media screen and (min-width: $desc) {
     width: $desc;
+  }
+  &__push {
+    z-index: 999;
+    height: 30px;
+    width: 100%;
+    outline: 1px solid red;
+    // position: absolute;
+    margin-bottom: 110px;
   }
   &__title {
     width: 218px;
@@ -54,15 +64,86 @@
   }
   &__img {
     display: none;
+    @media screen and (min-width: $tab) {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: 34px;
+    }
   }
   &--button {
     margin-right: 8px;
   }
   &-slider {
     display: none;
+    position: relative;
+    padding-left: 120px;
+    @media screen and (min-width: $tab) {
+      margin-top: 66px;
+      display: flex;
+    }
+    &__img {
+      position: absolute;
+      top: -47px;
+      left: 0px;
+      @media screen and (min-width: $tab) {
+        width: 124px;
+      }
+    }
+    &__text {
+      width: 114px;
+      @include font-base(400, 8, 12);
+      color: var(--brend-color-2);
+      margin-bottom: 7px;
+    }
+    & button {
+      fill: var(--brend-color-1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 }
 
 .achivements {
   display: none;
+  @media screen and (min-width: $tab) {
+    // margin-top: 66px;
+    display: block;
+    position: absolute;
+    top: 94px;
+    right: 34px;
+  }
+  &__item {
+    position: relative;
+    padding-right: 10px;
+  }
+  &__item + &__item {
+    margin-top: 13px;
+  }
+  &__num {
+    position: relative;
+    z-index: 3;
+    text-align: right;
+    font-family: Titan One;
+    @include font-base(400, 28, 32);
+    color: var(--brend-color-1);
+  }
+  &__ball {
+    z-index: 0;
+    display: block;
+    content: '';
+    background-color: var(--brend-color-2);
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+  &__text {
+    text-align: right;
+    @include font-base(400, 8, 10);
+    color: var(--brend-color-2);
+  }
 }
