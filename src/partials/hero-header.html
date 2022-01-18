@@ -1,5 +1,6 @@
 <section class="hero">
   <!--! Header -->
+
   <header class="header">
     <!-- <img class="logo__img" src="images/logo.png" alt="logo" /> -->
     <div class="logo">
@@ -19,8 +20,6 @@
         <li class="menu__item"><a href="" class="menu__link">Contact</a></li>
       </ul>
     </nav>
-
-    <button class="button button--header" type="button">Buy now</button>
     <!--! Mobile Menu Button -->
     <button
       class="mob-menu js-open-menu"
@@ -32,31 +31,46 @@
         <use href="images/symbol-defs.svg#mob-menu"></use>
       </svg>
     </button>
+    <button class="button button--2 button--header modal-bynow-open" type="button">
+      <div class="button__wrapper">
+        <p class="button__text">Buy now</p>
+        <svg class="button__icon" width="10" height="10">
+          <use href="images/symbol-defs.svg#icon-Vector"></use>
+        </svg>
+      </div>
+    </button>
   </header>
+  <!-- <div class="hero__push"></div> -->
   <div class="container">
     <!-- <span class="hero__white">ice cream made with</span>  -->
     <h1 class="hero__title">ice cream made with <span>passion</span></h1>
     <a class="button button--1 hero--button" href="#products">Products</a>
     <a class="button button--2" href="#howitmades">How it’s made?</a>
-    <!-- <button type="button" class="button button--1 hero--button">Products</button>
-    <button type="button" class="button button--2">How it’s made?</button> -->
-    <div class="heero-slider">
-      <img class="hero-slader__img" src="images/milk-desk-x1.png" alt="milk" />
-      <p class="hero-slider__text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et
-      </p>
-      <button type="button" class="button">arrow</button>
+    <div class="hero-slider">
+      <img class="hero-slider__img" src="images/milk-desk-x1.png" alt="milk" />
+      <div class="hero-slider__wrapper">
+        <p class="hero-slider__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et
+        </p>
+        <button class="button button--2" type="button">
+          <svg class="mob-menu__icon" width="8" height="8">
+            <use href="images/symbol-defs.svg#arrow"></use>
+          </svg>
+        </button>
+      </div>
     </div>
     <!-- Achivki-->
     <ul class="achivements">
       <li class="achivements__item">
+        <div class="achivements__ball"></div>
         <p class="achivements__num">16</p>
-        <p class="acivements__text">cafes</p>
+        <p class="achivements__text">cafes</p>
       </li>
       <li class="achivements__item">
         <p class="achivements__num">23</p>
-        <p class="acivements__text">food trucks</p>
+        <div class="achivements__ball"></div>
+        <p class="achivements__text">food trucks</p>
       </li>
     </ul>
     <img class="hero__img" src="images/tasty-tab-x1.png" alt="girl with icecream" />

@@ -1,6 +1,6 @@
 .header {
   position: fixed;
-  top: 0;
+  top: 30px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 99;
@@ -11,20 +11,32 @@
     width: $mob;
   }
   @media screen and (min-width: $tab) {
+    // top: 30px;
     width: $tab;
+    padding: 6px 34px 0;
   }
   @media screen and (min-width: $desc) {
     width: $desc;
   }
   &__nav {
     display: none;
-  }
-  &__menu {
-    margin-left: auto;
+    @media screen and (min-width: $desc) {
+      margin-left: 110px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 }
 .button--header {
   display: none;
+  @media screen and (min-width: $tab) {
+    display: block;
+    height: 44px;
+    width: 160px;
+    @include font-base(700, 16, 21);
+    margin-left: 30px;
+  }
 }
 .logo {
   display: flex;
@@ -40,6 +52,12 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: var(--brend-color-1);
+  }
+}
+.menu {
+  display: flex;
+  &__item + &__item {
+    margin-left: 20px;
   }
 }
 @import './components/mob-menu';
