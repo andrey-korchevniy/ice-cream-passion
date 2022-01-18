@@ -28,3 +28,16 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+video.onclick = function() {
+  let start = Date.now();
+
+  let timer = setInterval(function() {
+    let timePassed = Date.now() - start;
+
+    video.style.left = timePassed / 3 + 'px';
+
+    if (timePassed > 9000) clearInterval(timer);
+
+  }, 6000);
+}

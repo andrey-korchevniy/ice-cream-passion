@@ -56,11 +56,12 @@
     width:90%;
     height:90%;
 
-    transition: transform 9000ms cubic-bezier(1,.01,1,-0.21);
-    transform: translatex(0);
+/*     transition: transform 1500ms cubic-bezier(1,.01,1,-0.21) 6s;
+    transform: translatex(0); */
 
-    &:hover,
+/*     &:hover,
     &:focus {
+        
         transform: translatex(480px);
 
         @media screen and(min-width:768px) {
@@ -68,7 +69,7 @@
 
         @media screen and(min-width:1280px) {
             transform: translatex(1280px);}
-    }
+    }*/
 }
 
 .before{
@@ -81,8 +82,8 @@
     display: inline-block;
     position: absolute;
     width: 98%;
-    transition: transform 9000ms cubic-bezier(1,.01,1,-0.21);
-    transform: translatex(0);
+/*     transition: transform 1500ms cubic-bezier(1,.01,1,-0.21) 6s;
+    transform: translatex(0); */
 
     @media screen and(min-width:480px) {
         width: 470px;}
