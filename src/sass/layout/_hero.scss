@@ -20,15 +20,16 @@
     }
     @media screen and (min-width: $tab) {
       width: $tab;
-      // padding-top: 0px;
       padding-top: 120px;
-      padding-bottom: 21px;
+      padding-bottom: 34px;
       background-image: url('../images/ice-tab-x1.png'),
         radial-gradient(circle at 65% 50%, var(--bg-color-2) 162px, var(--bg-color) 0px);
       background-position: 65% 100%;
     }
     @media screen and (min-width: $desc) {
       width: $desc;
+      padding-top: 171px;
+      padding-bottom: 56px;
       background-image: url('../images/ice-desk-x1.png'),
         radial-gradient(circle at 65% 50%, var(--bg-color-2) 269px, var(--bg-color) 0px);
       background-position: 65% 100%;
@@ -57,7 +58,7 @@
       @include font-base(400, 22, 25);
       width: 162px;
     }
-    @media screen and (min-width: $tab) {
+    @media screen and (min-width: $desc) {
       @include font-base(400, 38, 44);
       width: 277px;
     }
@@ -73,6 +74,10 @@
     @media screen and (min-width: $tab) {
       @include font-base(400, 34, 31);
     }
+    @media screen and (min-width: $desc) {
+      @include font-base(400, 58, 52);
+      width: 277px;
+    }
   }
   &__img {
     display: none;
@@ -81,11 +86,26 @@
       position: absolute;
       bottom: 0;
       right: 34px;
+      width: 168px;
+    }
+    @media screen and (min-width: $desc) {
+      width: 293px;
     }
   }
   &--button {
-    margin-right: 8px;
+    @media screen and (min-width: $desc) {
+      height: 40px;
+      padding: 7px 20px;
+      @include font-base(400, 14, 18);
+    }
   }
+  &--button + &--button {
+    margin-left: 8px;
+    @media screen and (min-width: $desc) {
+      margin-left: 15px;
+    }
+  }
+
   &-slider {
     display: none;
     position: relative;
@@ -94,6 +114,10 @@
       margin-top: 66px;
       display: flex;
     }
+    @media screen and (min-width: $desc) {
+      margin-top: 112px;
+      padding-left: 180px;
+    }
     &__img {
       position: absolute;
       top: -47px;
@@ -101,18 +125,42 @@
       @media screen and (min-width: $tab) {
         width: 124px;
       }
+      @media screen and (min-width: $desc) {
+        top: -56px;
+        left: -38px;
+        width: 188px;
+      }
     }
     &__text {
       width: 114px;
       @include font-base(400, 8, 12);
       color: var(--brend-color-2);
       margin-bottom: 7px;
+      @media screen and (min-width: $desc) {
+        width: 200px;
+        @include font-base(400, 14, 20);
+      }
     }
     & button {
+      padding: 0;
+      width: 18px;
+      height: 18px;
       fill: var(--brend-color-1);
       display: flex;
       align-items: center;
       justify-content: center;
+      @media screen and (min-width: $desc) {
+        width: 26px;
+        height: 26px;
+      }
+    }
+    &--button__icon {
+      width: 4px;
+      height: 4px;
+      @media screen and (min-width: $desc) {
+        width: 8px;
+        height: 8px;
+      }
     }
   }
 }
@@ -126,9 +174,17 @@
     top: 94px;
     right: 34px;
   }
+  @media screen and (min-width: $desc) {
+    top: 156px;
+    right: 97px;
+  }
+
   &__item {
     position: relative;
     padding-right: 10px;
+    @media screen and (min-width: $desc) {
+      padding-right: 18px;
+    }
   }
   &__item + &__item {
     margin-top: 13px;
@@ -140,6 +196,9 @@
     font-family: Titan One;
     @include font-base(400, 28, 32);
     color: var(--brend-color-1);
+    @media screen and (min-width: $desc) {
+      @include font-base(400, 46, 53);
+    }
   }
   &__ball {
     z-index: 0;
@@ -152,10 +211,17 @@
     position: absolute;
     top: 0px;
     right: 0px;
+    @media screen and (min-width: $desc) {
+      height: 30px;
+      width: 30px;
+    }
   }
   &__text {
     text-align: right;
     @include font-base(400, 8, 10);
     color: var(--brend-color-2);
+    @media screen and (min-width: $desc) {
+      @include font-base(400, 14, 18);
+    }
   }
 }
