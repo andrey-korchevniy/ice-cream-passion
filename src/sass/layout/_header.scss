@@ -1,5 +1,5 @@
 .header {
-  position: fixed;
+  position: absolute;
   top: 30px;
   left: 50%;
   transform: translateX(-50%);
@@ -17,6 +17,8 @@
   }
   @media screen and (min-width: $desc) {
     width: $desc;
+    padding-left: 46px;
+    padding-right: 115px;
   }
   &__nav {
     display: none;
@@ -36,6 +38,9 @@
     width: 160px;
     @include font-base(700, 16, 21);
     margin-left: 30px;
+  }
+  @media screen and (min-width: $desc) {
+    margin-left: auto;
   }
 }
 .logo {
@@ -58,6 +63,13 @@
   display: flex;
   &__item + &__item {
     margin-left: 20px;
+  }
+  &__link {
+    @include font-base(700, 16, 21);
+    color: var(--brend-color-2);
+  }
+  &__link:hover {
+    color: var(--brend-color-1);
   }
 }
 @import './components/mob-menu';
