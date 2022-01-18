@@ -23,8 +23,8 @@
   position: fixed;
   top: 0;
   right: 0;
-  width: 100%;
-
+  // width: 100%;
+  width: 250px;
   height: 100%;
   // padding: 23px 28px;
   display: flex;
@@ -35,7 +35,7 @@
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
   @media screen and (min-width: $tab) {
-    width: 255px;
+    width: 254px;
   }
   &__button {
     background-color: transparent;
@@ -110,5 +110,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @media screen and (min-width: $tab) {
+    width: 166px;
+  }
 }
 // @import "../components/socials";
