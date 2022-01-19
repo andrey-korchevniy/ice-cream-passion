@@ -1,38 +1,51 @@
 @import './layout/header';
 .hero {
   background-color: var(--bg-color);
+  background-repeat: no-repeat;
+  @media screen and (max-width: $tab) {
+    background-image: url('../images/ice-mob-x1.png'),
+      radial-gradient(circle at 65% 50%, var(--bg-color-2) 173px, var(--bg-color) 0px);
+
+    background-repeat: no-repeat;
+    background-position: 70% 100%;
+    background-size: auto;
+  }
+  // @media screen and (min-width: $tab) {
+  //   background-image: url('../images/ice-tab-x1.png'),
+  //     radial-gradient(circle at 65% 50%, var(--bg-color-2) 162px, var(--bg-color) 0px);
+  //   background-position: 65% 100%;
+  // }
+  // @media screen and (min-width: $desc) {
+  //   background-image: url('../images/ice-desk-x1.png'),
+  //     radial-gradient(circle at 65% 50%, var(--bg-color-2) 269px, var(--bg-color) 0px);
+  //   background-position: 65% 100%;
+  // }
   &__wrapper {
     position: relative;
     margin-left: auto;
     margin-right: auto;
     padding-top: 193px;
     padding-bottom: 160px;
-    // background-color: var(--bg-color);
-    //
-    background-image: url('../images/ice-mob-x1.png'),
-      radial-gradient(circle at 65% 50%, var(--bg-color-2) 173px, var(--bg-color) 0px);
 
-    background-repeat: no-repeat;
-    background-position: 77% 100%;
-    background-size: auto;
     @media screen and (min-width: $mob) {
-      width: $mob;
+      // width: $mob;
     }
     @media screen and (min-width: $tab) {
-      width: $tab;
+      // width: $tab;
       padding-top: 120px;
       padding-bottom: 34px;
       background-image: url('../images/ice-tab-x1.png'),
         radial-gradient(circle at 65% 50%, var(--bg-color-2) 162px, var(--bg-color) 0px);
       background-position: 65% 100%;
+      background-repeat: no-repeat;
     }
     @media screen and (min-width: $desc) {
-      width: $desc;
+      // width: $desc;
       padding-top: 171px;
       padding-bottom: 56px;
       background-image: url('../images/ice-desk-x1.png'),
-        radial-gradient(circle at 65% 50%, var(--bg-color-2) 269px, var(--bg-color) 0px);
-      background-position: 65% 100%;
+        radial-gradient(circle at 60% 50%, var(--bg-color-2) 269px, var(--bg-color) 0px);
+      background-position: 60% 100%;
     }
   }
 
@@ -89,6 +102,7 @@
       width: 168px;
     }
     @media screen and (min-width: $desc) {
+      right: 109px;
       width: 293px;
     }
   }
