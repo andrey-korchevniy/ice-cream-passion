@@ -180,7 +180,6 @@
 .products-card--pink {
   background: var(--bg-color);
 }
-
 .products-card--pink::before {
   content: ' ';
   position: absolute;
@@ -377,20 +376,20 @@
     height: 335px;
     top: -205px;
   }
-  background-image: url('../images/pinkice-mob(b)-x1.png');
+  background-image: url('../images/pinkice-mob-b-x1.png');
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url('../images/pinkice-mob(b)-x2.png');
+    background-image: url('../images/pinkice-mob-b-x2.png');
   }
   @media screen and (min-width: 768px) {
-    background-image: url('../images/pinkice-tab(b)-x1.png');
+    background-image: url('../images/pinkice-tab-b-x1.png');
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url('../images/pinkice-tab(b)-x2.png');
+      background-image: url('../images/pinkice-tab-b-x2.png');
     }
   }
   @media screen and (min-width: 1280px) {
-    background-image: url('../images/pinkice-desk(b)-x1.png');
+    background-image: url('../images/pinkice-desk-b-x1.png');
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url('../images/pinkice-desk(b)-x2.png');
+      background-image: url('../images/pinkice-desk-b-x2.png');
     }
   }
 }
@@ -417,20 +416,20 @@
     height: 335px;
     top: -205px;
   }
-  background-image: url('../images/icecoffe-mob(b)-x1.png');
+  background-image: url('../images/icecoffe-mob-b-x1.png');
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url('../images/icecoffe-mob(b)-x2.png');
+    background-image: url('../images/icecoffe-mob-b-x2.png');
   }
   @media screen and (min-width: 768px) {
-    background-image: url('../images/icecoffe-tab(b)-x1.png');
+    background-image: url('../images/icecoffe-tab-b-x1.png');
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url('../images/icecoffe-tab(b)-x2.png');
+      background-image: url('../images/icecoffe-tab-b-x2.png');
     }
   }
   @media screen and (min-width: 1280px) {
-    background-image: url('../images/icecoffe-desk(b)-x1.png');
+    background-image: url('../images/icecoffe-desk-b-x1.png');
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url('../images/icecoffe-desk(b)-x2.png');
+      background-image: url('../images/icecoffe-desk-b-x2.png');
     }
   }
 }
@@ -457,20 +456,20 @@
     height: 335px;
     top: -205px;
   }
-  background-image: url('../images/milkshake-mob(b)-x1.png');
+  background-image: url('../images/milkshake-mob-b-x1.png');
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url('../images/milkshake-mob(b)-x2.png');
+    background-image: url('../images/milkshake-mob-b-x2.png');
   }
   @media screen and (min-width: 768px) {
-    background-image: url('../images/milkshake-tab(b)-x1.png');
+    background-image: url('../images/milkshake-tab-b-x1.png');
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url('../images/milkshake-tab(b)-x2.png');
+      background-image: url('../images/milkshake-tab-b-x2.png');
     }
   }
   @media screen and (min-width: 1280px) {
-    background-image: url('../images/milkshake-desk(b)-x1.png');
+    background-image: url('../images/milkshake-desk-b-x1.png');
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url('../images/milkshake-desk(b)-x2.png');
+      background-image: url('../images/milkshake-desk-b-x2.png');
     }
   }
 }
