@@ -96,6 +96,8 @@
   &__svg {
     width: 32px;
     height: 32px;
+    fill: #fea5bb;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     @media screen and (min-width: 768px) {
       width: 34px;
@@ -105,7 +107,7 @@
 
   &__item:hover &__svg,
   &__item:focus &__svg {
-    --color1: var(--brend-color-1);
+    fill: var(--brend-color-1);
   }
 
   &__contact {
