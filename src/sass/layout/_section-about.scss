@@ -1,12 +1,17 @@
 .about {
   padding: 125px 0 40px 0;
   background-color: #fff5f6;
-  &__container {
-    background-image: url(../images/milkbreeze-mob-x1.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position-y: 93%;
+  background-image: url(../images/milkbreeze-mob-x1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: 89%;
+  @media screen and(min-width:$tab) {
+    background-image: none;
   }
+
+  // &__container {
+ 
+  // }
   &__label {
     font-family: Titan One;
     font-style: normal;
@@ -40,7 +45,8 @@
     font-weight: 500;
     line-height: 1.62;
     color: var(--caption-color);
-    max-width: 220px;
+    min-width: 290px;
+    padding: 0 35px;
     margin-left: auto;
     margin-right: auto;
   }
