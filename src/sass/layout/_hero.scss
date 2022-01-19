@@ -1,17 +1,16 @@
 @import './layout/header';
 .hero {
   background-color: var(--bg-color);
-  background-repeat: no-repeat;
-  @media screen and (max-width: $tab) {
+  @media screen and (max-width: 767px) {
     background-image: url('../images/ice-mob-x1.png'),
       radial-gradient(circle at 65% 50%, var(--bg-color-2) 173px, var(--bg-color) 0px);
     background-repeat: no-repeat;
     background-position: 70% 100%;
-    background-size: auto;
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url('../images/ice-mob-x2.png'),
-        radial-gradient(circle at 65% 50%, var(--bg-color-2) 173px, var(--bg-color) 0px);
-    }
+    // background-size: 171px;
+    // @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    //   background-image: url('../images/ice-mob-x2.png'),
+    //     radial-gradient(circle at 65% 50%, var(--bg-color-2) 173px, var(--bg-color) 0px);
+    // }
   }
 
   &__wrapper {
@@ -29,10 +28,11 @@
         radial-gradient(circle at 65% 50%, var(--bg-color-2) 162px, var(--bg-color) 0px);
       background-position: 65% 100%;
       background-repeat: no-repeat;
-      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background-image: url('../images/ice-tab-x2.png'),
-          radial-gradient(circle at 65% 50%, var(--bg-color-2) 162px, var(--bg-color) 0px);
-      }
+      // background-size: 143px;
+      // @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      //   background-image: url('../images/ice-tab-x2.png'),
+      //     radial-gradient(circle at 65% 50%, var(--bg-color-2) 162px, var(--bg-color) 0px);
+      // }
     }
     @media screen and (min-width: $desc) {
       // width: $desc;
@@ -41,10 +41,11 @@
       background-image: url('../images/ice-desk-x1.png'),
         radial-gradient(circle at 60% 50%, var(--bg-color-2) 269px, var(--bg-color) 0px);
       background-position: 60% 100%;
-      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background-image: url('../images/ice-desk-x2.png'),
-          radial-gradient(circle at 60% 50%, var(--bg-color-2) 269px, var(--bg-color) 0px);
-      }
+      // background-size: 236px;
+      // @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      //   background-image: url('../images/ice-desk-x2.png'),
+      //     radial-gradient(circle at 60% 50%, var(--bg-color-2) 269px, var(--bg-color) 0px);
+      // }
     }
   }
 
