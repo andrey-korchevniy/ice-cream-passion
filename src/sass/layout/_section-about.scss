@@ -7,13 +7,16 @@
   background-position-y: 89%;
   @media screen and(min-width:$tab) {
     background-image: none;
+    padding: 129px 0 66px 0;
+  }
+  @media screen and(min-width:$desc) {
+    background-image: url(../images/milkbreeze-desk-x1.png);
+    // background-position-y: 0;
+    padding: 125px 0 39px 0;
   }
 
-  // &__container {
- 
-  // }
   &__label {
-    font-family: Titan One;
+    font-family: $ff-secondary;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -21,9 +24,19 @@
     text-align: center;
     text-transform: uppercase;
     color: var(--brend-color-3);
+    @media screen and(min-width:$tab){
+      font-size: 26px;
+      line-height: 1.15;
+    }
+    @media screen and(min-width:$desc){
+      font-size: 30px;
+      line-height: 1.13;
+      letter-spacing: 0.04em;
+    }
+
   }
   &__title {
-    font-family: Titan One;
+    font-family: $ff-secondary;
     font-style: normal;
     font-weight: normal;
     font-size: 34px;
@@ -32,13 +45,25 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: var(--brend-color-1);
-    max-width: 200px;
     margin: 14px auto 26px;
+    @media screen and(min-width:$tab){
+      font-size: 48px;
+      margin: 16px auto 50px;
+    }
+    @media screen and(min-width:$desc){
+      font-size: 58px;
+      line-height: 1.13;
+      letter-spacing: 0.06em;
+      margin: 15px auto 55px;
+    }
   }
   &__image {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 46px;
+    @media screen and(min-width:$tab){
+      margin: 0;
+    }
   }
   &__description {
     font-style: normal;
@@ -49,12 +74,45 @@
     padding: 0 35px;
     margin-left: auto;
     margin-right: auto;
+    @media screen and(min-width:$tab){
+      line-height: 1.76;
+      padding: 0;
+    }
   }
   &__text {
     @extend .about__description;
     color: var(--text-color);
     margin-top: 32px;
     margin-bottom: 25px;
+    @media screen and(min-width:$tab){
+      letter-spacing: 0.04em;
+      margin-top: 24px;
+      margin-bottom: 62px;
+    }
+    @media screen and(min-width:$desc){
+      font-size: 14px;
+      line-height: 1.94;
+      margin-top: 35px;
+      margin-bottom: 45px;
+    }
+  }
+}
+.wrap1{
+  @media screen and(min-width:$tab){
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.wrap2{
+  @media screen and(min-width:$tab){
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    margin-top: 50px;
+  }
+  @media screen and(min-width:$desc){
+    width: 463px;
+    margin-top: 56px;
   }
 }
 .about__btn {
@@ -73,6 +131,9 @@
   background-color: #ffffff;
   width: 176px;
   height: 44px;
+  @media screen and(min-width:$tab){
+    margin: 0;
+  }
 }
 .about__svg {
   margin-left: 14px;
