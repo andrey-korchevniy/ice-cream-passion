@@ -38,6 +38,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: .7s;
 }
 .slider-naw{
     position: absolute;
@@ -56,7 +57,6 @@
 width: 12px;
 height: 12px;
 background-color: #D9D9D9;
-;
 opacity: .7;
 border-radius: 50%;
 cursor: pointer;
@@ -65,6 +65,7 @@ cursor: pointer;
     border-radius: 0px;
     opacity: 100;
     background-color: #ffffff;
+    
 background-image: url(../images/homepick.png);}
 &:not(:last-child){
     margin-right: 18px;
