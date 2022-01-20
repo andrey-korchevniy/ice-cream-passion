@@ -67,6 +67,7 @@ body {
 .button--1 {
   background-color: var(--brend-color-1);
   color: var(--brend-color-2);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     background-color: var(--button-hover-1);
@@ -75,6 +76,7 @@ body {
 .button--2 {
   background-color: var(--brend-color-2);
   color: var(--brend-color-1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     background-color: var(--button-hover-2);
