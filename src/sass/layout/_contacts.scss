@@ -390,7 +390,7 @@
   &:hover,
   &:focus {
     box-shadow: 0px 10px 20px rgba(212, 20, 67, 0.5);
-    
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   @media screen and(min-width:768px) {
@@ -413,7 +413,9 @@
 
     &:hover,
     &:focus{
+      background-color: rgba(236, 235, 235, 1);
       box-shadow: 0px 10px 20px rgba(212, 20, 67, 0.3);
+      transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
 }
