@@ -1,25 +1,18 @@
 @import './layout/header';
 .hero {
   background-color: var(--bg-color);
-  background-repeat: no-repeat;
-  @media screen and (max-width: $tab) {
+  @media screen and (max-width: 767px) {
     background-image: url('../images/ice-mob-x1.png'),
       radial-gradient(circle at 65% 50%, var(--bg-color-2) 173px, var(--bg-color) 0px);
-
     background-repeat: no-repeat;
     background-position: 70% 100%;
-    background-size: auto;
+    // background-size: 171px;
+    // @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    //   background-image: url('../images/ice-mob-x2.png'),
+    //     radial-gradient(circle at 65% 50%, var(--bg-color-2) 173px, var(--bg-color) 0px);
+    // }
   }
-  // @media screen and (min-width: $tab) {
-  //   background-image: url('../images/ice-tab-x1.png'),
-  //     radial-gradient(circle at 65% 50%, var(--bg-color-2) 162px, var(--bg-color) 0px);
-  //   background-position: 65% 100%;
-  // }
-  // @media screen and (min-width: $desc) {
-  //   background-image: url('../images/ice-desk-x1.png'),
-  //     radial-gradient(circle at 65% 50%, var(--bg-color-2) 269px, var(--bg-color) 0px);
-  //   background-position: 65% 100%;
-  // }
+
   &__wrapper {
     position: relative;
     margin-left: auto;
@@ -27,9 +20,6 @@
     padding-top: 193px;
     padding-bottom: 160px;
 
-    @media screen and (min-width: $mob) {
-      // width: $mob;
-    }
     @media screen and (min-width: $tab) {
       // width: $tab;
       padding-top: 120px;
@@ -38,6 +28,11 @@
         radial-gradient(circle at 65% 50%, var(--bg-color-2) 162px, var(--bg-color) 0px);
       background-position: 65% 100%;
       background-repeat: no-repeat;
+      // background-size: 143px;
+      // @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      //   background-image: url('../images/ice-tab-x2.png'),
+      //     radial-gradient(circle at 65% 50%, var(--bg-color-2) 162px, var(--bg-color) 0px);
+      // }
     }
     @media screen and (min-width: $desc) {
       // width: $desc;
@@ -46,6 +41,11 @@
       background-image: url('../images/ice-desk-x1.png'),
         radial-gradient(circle at 60% 50%, var(--bg-color-2) 269px, var(--bg-color) 0px);
       background-position: 60% 100%;
+      // background-size: 236px;
+      // @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      //   background-image: url('../images/ice-desk-x2.png'),
+      //     radial-gradient(circle at 60% 50%, var(--bg-color-2) 269px, var(--bg-color) 0px);
+      // }
     }
   }
 
@@ -155,22 +155,10 @@
         @include font-base(400, 14, 20);
       }
     }
-    & button {
-      padding: 0;
-      width: 18px;
-      height: 18px;
-      fill: var(--brend-color-1);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      @media screen and (min-width: $desc) {
-        width: 26px;
-        height: 26px;
-      }
-    }
+
     &--button__icon {
-      width: 4px;
-      height: 4px;
+      width: 6px;
+      height: 6px;
       @media screen and (min-width: $desc) {
         width: 8px;
         height: 8px;
@@ -237,5 +225,18 @@
     @media screen and (min-width: $desc) {
       @include font-base(400, 14, 18);
     }
+  }
+}
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--brend-color-1);
+  padding: 0;
+  width: 18px;
+  height: 18px;
+  @media screen and (min-width: $desc) {
+    width: 26px;
+    height: 26px;
   }
 }
